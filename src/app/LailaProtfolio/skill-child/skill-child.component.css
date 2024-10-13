@@ -1,0 +1,8 @@
+.bodyCard{
+  background-color: #0d1224;
+  color: #fff;
+  box-shadow: 2px 2px 2px 2px rgba(74, 74, 74, 0.2);
+}
+.bodyCard:hover{
+  transform: scale(1.1);
+}

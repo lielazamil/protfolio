@@ -1,0 +1,492 @@
+<div class="container form-body mt-5 form1">
+  <h1 class="text-center">About You</h1>
+  <form
+    id="portfolioForm"
+    [formGroup]="contactForm"
+    (ngSubmit)="handleSubmitForm()"
+    method="post"
+  >
+    <!-- Name Input -->
+    <div class="form-group mb-3">
+      <label for="username">Your Name</label>
+      <input
+        type="text"
+        class="form-control"
+        id="username"
+        placeholder="Enter your name"
+        formControlName="username"
+      />
+    </div>
+    <!-- Major name Input -->
+    <div class="form-group mb-3">
+      <label for="majorname">Your Major</label>
+      <input
+        type="text"
+        class="form-control"
+        id="majorname"
+        placeholder="Enter your name"
+        formControlName="majorname"
+      />
+    </div>
+
+    <!-- Email Input -->
+    <div class="form-group mb-3">
+      <label for="userEmail">Email address</label>
+      <input
+        type="email"
+        class="form-control"
+        id="userEmail"
+        placeholder="Enter email"
+        formControlName="email"
+      />
+    </div>
+
+    <!-- Phone Input -->
+    <div class="form-group mb-3">
+      <label for="userPhone">Phone</label>
+      <input
+        type="text"
+        class="form-control"
+        id="userPhone"
+        placeholder="Enter Phone"
+        formControlName="phone"
+      />
+    </div>
+
+    <!-- Education Input -->
+    <div class="form-group mb-3">
+      <label for="userEducation">Education</label>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Enter Education"
+        formControlName="education"
+      />
+    </div>
+    <!-- graduation Input -->
+    <div class="form-group mb-3">
+      <label for="graduation">Year of Graduation</label>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Enter year of graduation"
+        formControlName="graduation"
+      />
+    </div>
+    <!-- BACHELOR OF Input -->
+    <!-- <div class="form-group mb-3">
+      <label for="bachalor">BACHELOR OF</label>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Enter Education"
+        formControlName="bachalor"
+      />
+    </div> -->
+    <!-- Specialize in Input -->
+    <div class="form-group mb-3">
+      <label for="Specialize">Specialize in</label>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Enter Specialize"
+        formControlName="Specialize"
+      />
+    </div>
+    <!-- Faculty Input -->
+    <div class="form-group mb-3">
+      <label for="faculty">Fuculty</label>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Enter Education"
+        formControlName="faculty"
+      />
+    </div>
+    <!-- descripe Input -->
+    <div class="form-group mb-3">
+      <label for="descripe">Describe Your selfe</label>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Tell us about yourself..."
+        formControlName="descripe"
+      />
+    </div>
+
+    <!-- Image Upload Input -->
+    <div class="form-group mb-3">
+      <label for="imageUpload">Upload Your Image or PDF</label>
+      <input
+        type="file"
+        class="form-control"
+        id="imageUpload"
+        (change)="onImageUpload($event)"
+        formControlName="profileImage"
+        accept=".jpg, .jpeg, .png, .pdf"
+      />
+    </div>
+
+    <!-- CV Upload -->
+    <div class="form-group mb-3">
+      <label for="cvUpload">Upload Your Resume (GoogleDrive Link)</label>
+      <input
+        type="text"
+        class="form-control"
+        formControlName="resume"
+        placeholder="Upload GoogleDrive Link"
+      />
+    </div>
+
+    <!-- About You Section -->
+    <h3>About Your Work Skills</h3>
+    <div class="aboutUser">
+      <div class="WorkSkills">
+        <div class="form-group mb-3">
+          <label for="workSkills">About Your First Skill</label>
+          <input
+            type="text"
+            class="form-control mb-2"
+            placeholder="Enter ur skill Title"
+            formControlName="titleWorkSkill1"
+          />
+          <label for="imageUpload">Upload Your Image Skill</label>
+      <input
+        type="file"
+        class="form-control"
+        id="imageUpload"
+        (change)="onImageUpload($event)"
+        formControlName="img1"
+        accept=".jpg, .jpeg, .png, .pdf"
+      />
+        </div>
+
+        <div class="form-group mb-3">
+          <label for="workSkills">About Your Second Skill</label>
+          <input
+            type="text"
+            class="form-control mb-2"
+            placeholder="Enter ur skill Title"
+            formControlName="titleWorkSkill2"
+          />
+          <label for="imageUpload">Upload Your Image Skill</label>
+      <input
+        type="file"
+        class="form-control"
+        id="imageUpload"
+        (change)="onImageUpload($event)"
+        formControlName="img2"
+        accept=".jpg, .jpeg, .png, .pdf"
+      />
+        </div>
+
+        <div class="form-group mb-3">
+          <label for="workSkills">About Your Third Skill</label>
+          <input
+            type="text"
+            class="form-control mb-2"
+            placeholder="Enter ur skill Title"
+            formControlName="titleWorkSkill3"
+          />
+          <label for="imageUpload">Upload Your Image Skill</label>
+      <input
+        type="file"
+        class="form-control"
+        id="imageUpload"
+        (change)="onImageUpload($event)"
+        formControlName="img3"
+        accept=".jpg, .jpeg, .png, .pdf"
+      />
+        </div>
+
+        <div class="form-group mb-3">
+          <label for="workSkills">About Your Fourth Skill</label>
+          <input
+            type="text"
+            class="form-control mb-2"
+            placeholder="Enter ur skill Title"
+            formControlName="titleWorkSkill4"
+          />
+          <label for="imageUpload">Upload Your Image Skill</label>
+      <input
+        type="file"
+        class="form-control"
+        id="imageUpload"
+        (change)="onImageUpload($event)"
+        formControlName="img4"
+        accept=".jpg, .jpeg, .png, .pdf"
+      />
+        </div>
+      </div>
+      <div class="form-group mb-3">
+        <label for="workSkills">About Your Fifth Skill</label>
+        <input
+          type="text"
+          class="form-control mb-2"
+          placeholder="Enter ur skill Title"
+          formControlName="titleWorkSkill5"
+        />
+        <label for="imageUpload">Upload Your Image Skill</label>
+    <input
+      type="file"
+      class="form-control"
+      id="imageUpload"
+      (change)="onImageUpload($event)"
+      formControlName="img5"
+      accept=".jpg, .jpeg, .png, .pdf"
+    />
+      </div>
+    </div>
+
+    <!-- Project Upload Input -->
+    <h3>About Your Projects</h3>
+    <div class="projects">
+      <div class="form-group mb-3 project1">
+        <label for="projectUpload">Upload Your Project Image</label>
+        <input
+          type="file"
+          class="form-control mb-3"
+          id="imageUpload"
+          (change)="onImageUploadProject1($event)"
+          formControlName="projectImg1"
+          accept=".jpg, .jpeg, .png, .pdf"
+        />
+
+        <label for="projectDes">Project Title</label>
+        <input
+          type="text"
+          class="form-control mb-3"
+          placeholder="Enter ur title"
+          formControlName="projectTitle1"
+        />
+
+        <label for="projectDes">Tools</label>
+        <input
+          type="text"
+          class="form-control mb-3"
+          formControlName="projectTool1"
+        />
+      </div>
+
+      <div class="form-group mb-3 project2">
+        <label for="projectUpload">Upload Your Project Image</label>
+        <input
+          type="file"
+          class="form-control"
+          id="imageUpload mb-3"
+          (change)="onImageUploadProject2($event)"
+          formControlName="projectImg2"
+          accept=".jpg, .jpeg, .png, .pdf"
+        />
+
+        <label for="projectDes">Project Title</label>
+        <input
+          type="text"
+          class="form-control mb-3"
+          placeholder="Enter ur title"
+          formControlName="projectTitle2"
+        />
+
+        <label for="projectDes">Tools</label>
+        <input
+          type="text"
+          class="form-control mb-3"
+          formControlName="projectTool2"
+        />
+      </div>
+
+      <div class="form-group mb-3 project3">
+        <label for="projectUpload">Upload Your Project Image</label>
+        <input
+          type="file"
+          class="form-control mb-3"
+          id="imageUpload"
+          (change)="onImageUploadProject3($event)"
+          formControlName="projectImg3"
+          accept=".jpg, .jpeg, .png, .pdf"
+        />
+
+        <label for="projectDes">Project Title</label>
+        <input
+          type="text"
+          class="form-control mb-3"
+          placeholder="Enter ur title"
+          formControlName="projectTitle3"
+        />
+
+        <label for="projectDes">Tools</label>
+        <input
+          type="text"
+          class="form-control mb-3"
+          formControlName="projectTool3"
+        />
+      </div>
+
+      <div class="form-group mb-3 project4">
+        <label for="projectUpload">Upload Your Project Image</label>
+        <input
+          type="file"
+          class="form-control mb-3"
+          id="imageUpload"
+          (change)="onImageUploadProject4($event)"
+          formControlName="projectImg4"
+          accept=".jpg, .jpeg, .png, .pdf"
+        />
+
+        <label for="projectDes">Project Title</label>
+        <input
+          type="text"
+          class="form-control mb-3"
+          placeholder="Enter ur title"
+          formControlName="projectTitle4"
+        />
+
+        <label for="projectDes">Tools</label>
+        <input
+          type="text"
+          class="form-control mb-3"
+          formControlName="projectTool4"
+        />
+      </div>
+
+      <div class="form-group mb-3 project5">
+        <label for="projectUpload">Upload Your Project Image</label>
+        <input
+          type="file"
+          class="form-control mb-3"
+          id="imageUpload"
+          (change)="onImageUploadProject5($event)"
+          formControlName="projectImg5"
+          accept=".jpg, .jpeg, .png, .pdf"
+        />
+
+        <label for="projectDes">Project Title</label>
+        <input
+          type="text"
+          class="form-control mb-3"
+          placeholder="Enter ur title"
+          formControlName="projectTitle5"
+        />
+
+        <label for="projectDes">Tools</label>
+        <input
+          type="text"
+          class="form-control mb-3"
+          formControlName="projectTool5"
+        />
+      </div>
+
+      <div class="form-group mb-3 project6">
+        <label for="projectUpload">Upload Your Project Image</label>
+        <input
+          type="file"
+          class="form-control mb-3"
+          id="imageUpload"
+          (change)="onImageUploadProject6($event)"
+          formControlName="projectImg6"
+          accept=".jpg, .jpeg, .png, .pdf"
+        />
+
+        <label for="projectDes">Project Title</label>
+        <input
+          type="text"
+          class="form-control mb-3"
+          placeholder="Enter ur title"
+          formControlName="projectTitle6"
+        />
+
+        <label for="projectDes">Tools</label>
+        <input
+          type="text"
+          class="form-control mb-3"
+          formControlName="projectTool6"
+        />
+      </div>
+
+      <div class="form-group mb-3 project7">
+        <label for="projectUpload">Upload Your Project Image</label>
+        <input
+          type="file"
+          class="form-control mb-3"
+          id="imageUpload"
+          (change)="onImageUploadProject7($event)"
+          formControlName="projectImg7"
+          accept=".jpg, .jpeg, .png, .pdf"
+        />
+
+        <label for="projectDes">Project Title</label>
+        <input
+          type="text"
+          class="form-control mb-3"
+          placeholder="Enter ur title"
+          formControlName="projectTitle7"
+        />
+
+        <label for="projectDes">Tools</label>
+        <input
+          type="text"
+          class="form-control mb-3"
+          formControlName="projectTool7"
+        />
+      </div>
+
+      <div class="form-group mb-3 project8">
+        <label for="projectUpload">Upload Your Project Image</label>
+        <input
+          type="file"
+          class="form-control mb-3"
+          id="imageUpload"
+          (change)="onImageUploadProject8($event)"
+          formControlName="projectImg8"
+          accept=".jpg, .jpeg, .png, .pdf"
+        />
+
+        <label for="projectDes">Project Title</label>
+        <input
+          type="text"
+          class="form-control mb-3"
+          placeholder="Enter ur title"
+          formControlName="projectTitle8"
+        />
+
+        <label for="projectDes">Tools</label>
+        <input
+          type="text"
+          class="form-control"
+          formControlName="projectTool8"
+        />
+      </div>
+    </div>
+
+    <!-- Blogs Upload -->
+    <!-- for contact Section -->
+    <h3>Social Accounts</h3>
+    <div class="social-section">
+      <!-- LinkedIn Upload -->
+      <div class="form-group mb-3">
+        <label for="linkedin">LinkedIn Profile</label>
+        <input type="text" class="form-control" formControlName="linkedin" />
+      </div>
+
+      <!-- GitHub Upload -->
+      <div class="form-group mb-3">
+        <label for="github">GitHub Profile</label>
+        <input type="text" class="form-control" formControlName="github" />
+      </div>
+
+      <!-- Facebook Upload -->
+      <div class="form-group mb-3">
+        <label for="facebook">Facebook Profile</label>
+        <input type="text" class="form-control" formControlName="facebook" />
+      </div>
+
+      <!-- Instagram Upload -->
+      <div class="form-group mb-3">
+        <label for="Tweeter">Tweeter Profile</label>
+        <input type="text" class="form-control" formControlName="tweeter" />
+      </div>
+    </div>
+    <!-- Submit Button -->
+    <button type="submit" class="btn buttn" >Generate Portfolio</button>
+  </form>
+</div>

@@ -1,0 +1,15 @@
+<section class="container skills">
+  <div class="container">
+    <div style="text-align: center;">
+      <h2 class="mb-5">Skills</h2>
+    </div>
+    
+    <div class="row d-flex flex-row">
+      @for(skill of skills ;track skill.id){
+      <app-skill-child [skillitem]="skill" class="col text-center m-2"></app-skill-child>
+      }
+      
+
+    </div>
+  </div>
+</section>

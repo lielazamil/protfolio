@@ -1,0 +1,16 @@
+<section class="p-5 projects">
+  <div class="project-container">
+    <div class="project">
+      <img [src]="currentProject.imageUrl" alt="{{ currentProject.title }}" class="project-image" />
+      <div class="overlay">
+        <h2>{{ currentProject.title }}</h2>
+        <p>{{ currentProject.description }}</p>
+      </div>
+    </div>
+    
+    <div class="buttons">
+      <a [href]="currentProject.liveDemoUrl" target="_blank" class=" buttn btn">Live Demo</a>
+      <button class=" buttn btn" (click)="nextProject()">Next</button>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,27 @@
+.navbar {
+  background-color: #0d1224;
+  margin-bottom: 1rem;
+}
+.nav-item {
+  margin: .6rem;
+}
+.navbar .nav-link,
+.navbar .navbar-brand {
+  font-size: 1rem;
+  color: white ;
+  margin: .4rem;
+}
+#logo{
+  font-size: 1rem;
+  color: rgb(22 242 179)  ;
+}
+.navbar .nav-link:hover {
+  color:#0d1224 !important; 
+}
+.hovernav :hover{
+  background-color: white;
+  color:#0d1224 !important;
+  /* transition: 1s ease; */
+  /* padding: 0 20px; */
+  border-radius: 5px ;
+}

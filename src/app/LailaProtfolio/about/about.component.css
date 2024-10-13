@@ -1,0 +1,48 @@
+
+.aboutme {
+  
+}
+
+.aboutme{
+  margin: 0 auto;
+  text-align: center;
+}
+h2{
+  display: inline-block;
+  background-color:  rgb(26 20 67 );
+  padding: .5rem 1.7rem;
+  color: #fff;
+  border-radius: .7rem;
+  
+}
+.titleWHo{
+ color: rgb(22 242 179);
+ margin-bottom: 1.2rem;
+}
+.para{
+  color: #fff;
+  padding: .5rem;
+  font-size: 1.2rem;
+  line-height: 1.3;
+}
+.title{
+  flex: 2;
+  
+}
+.img{
+  flex:1;
+  padding: .6rem;
+}
+
+
+
+.education {
+  border-radius: 5px;
+  border:1px solid rgba(180, 56, 145, 1);
+  margin-top: 2rem;
+  height: 60%; 
+ color: #fff;
+ box-shadow: 2px 2px 2px 2px rgba(74, 74, 74, 0.2);
+ opacity: .7;
+ 
+}
