@@ -15,14 +15,14 @@ export class ProjectsComponent {
   currentProjectIndex = 0;
   projects = [
     {
-      title: 'Project 1',
-      description: 'This is the description for project 1.',
+      title: 'omnifood project',
+      description: 'Omnifood is a responsive website for a meal delivery service. It features a clean design, meal plans, user reviews, and easy sign-up options. Built with HTML and CSS it ensures smooth navigation and mobile-friendly viewing.',
       imageUrl: 'assets/img/pro1.png',
       liveDemoUrl: 'https://live-demo-1.com'
     },
     {
       title: 'Project 2',
-      description: 'This is the description for project 2.',
+      description: 'A series of small, responsive websites built with HTML, CSS, Bootstrap, JavaScript, and APIs. These projects feature dynamic elements like interactive forms, real-time data fetching, smooth scrolling, and responsive layouts. Each site ensures a seamless experience across devices, integrating API calls for functionalities like weather updates, product information, or user feedback.',
       imageUrl: 'assets/img/pro2.png',
       liveDemoUrl: 'https://live-demo-2.com'
     }

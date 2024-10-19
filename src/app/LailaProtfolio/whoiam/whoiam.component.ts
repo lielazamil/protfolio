@@ -1,21 +1,14 @@
 import { Component } from '@angular/core';
-import { trigger, state, style, transition, animate } from '@angular/animations';
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
+import { NavComponent } from '../nav/nav.component';
+import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-whoiam',
   standalone: true,
-  imports: [],
+  imports: [CommonModule, RouterModule, NgbCollapseModule,NavComponent],
   templateUrl: './whoiam.component.html',
-  styleUrl: './whoiam.component.css',
-  animations: [
-    trigger('fadeIn', [
-      transition(':enter', [
-        style({ opacity: 0, transform: 'translateY(20px)' }),
-        animate('0.5s ease', style({ opacity: 1, transform: 'translateY(0)' })),
-      ]),
-    ]),
-  ],
+  styleUrls: ['./whoiam.component.css'],
 })
-export class WhoiamComponent {
-
-}
+export class WhoiamComponent {}

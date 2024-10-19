@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NgModule } from '@angular/core';
 import {routes} from './app.routes' 
-import { AppRoutingModule } from './app.routes';
 import { RouterModule, Routes } from '@angular/router';
 import { UserProtfoComponent } from './user-protfo/user-protfo.component';
 import { NavComponent } from './LailaProtfolio/nav/nav.component';
